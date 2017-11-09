@@ -1,6 +1,6 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Spark
+  name: Spark Home
   # Location required to calculate the time the sun rises and sets
   latitude: 12.9833
   longitude: 77.5833

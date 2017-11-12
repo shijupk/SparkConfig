@@ -1,0 +1,3 @@
+media_players:
+  entities:
+    - media_player.livingroom_chrome_cast

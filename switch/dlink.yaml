@@ -1,0 +1,13 @@
+- platform: dlink
+  name: living_room_outlet
+  host: 192.168.1.108
+  username: admin
+  password: !secret switch_living_room_outlet
+  use_legacy_protocol: True
+
+- platform: dlink
+  name: kitchen_outlet
+  host: 192.168.1.111
+  username: admin
+  password: !secret switch_kitchen_outlet
+  use_legacy_protocol: True

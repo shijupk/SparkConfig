@@ -1,0 +1,4 @@
+motion:
+  name: Motion Detectors
+  entities:
+    - binary_sensor.room_motion

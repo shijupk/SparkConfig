@@ -1,0 +1,5 @@
+Family:
+  entities:
+    - device_tracker.shiju
+    - device_tracker.jyothi
+    - device_tracker.nirav

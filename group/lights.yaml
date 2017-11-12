@@ -1,0 +1,7 @@
+Bedroom lights:
+  entities:
+    - light.bedroom
+
+Living Room lights:
+  entities:
+    - light.livingroom

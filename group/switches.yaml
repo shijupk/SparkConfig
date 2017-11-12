@@ -1,0 +1,4 @@
+Interior Switches:
+  entities:
+    - switch.kitchen_outlet
+    - switch.living_room_outlet

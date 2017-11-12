@@ -1,4 +1,4 @@
 - platform: dlink_motion_sensor
   name: room_motion
-  host: 192.168.1.140
+  host: 192.168.1.115
   password: 118943

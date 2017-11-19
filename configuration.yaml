@@ -27,7 +27,7 @@ http:
   ssl_certificate: /etc/live/shijupk.com/shijupk_bundle.pem
   ssl_key: /etc/live/shijupk.com/shijupk.key.pem
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: shijupk.com:8123
+  base_url: shijupk.com
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -43,13 +43,6 @@ discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
-
-light:
-  - platform: hue
-    host: 192.168.1.105
-    allow_unreachable: true
-    allow_in_emulated_hue: false
-    allow_hue_groups: false
 
 media_player:
   - platform: cast
@@ -76,6 +69,7 @@ tts:
 
 group: !include_dir_merge_named group
 device_tracker: !include_dir_merge_list device_tracker
+light: !include_dir_merge_list light
 switch: !include_dir_merge_list switch
 binary_sensor: !include_dir_merge_list binary_sensor
 automation: !include automations.yaml

@@ -1,4 +1,4 @@
 - platform: xiaomi_miio
   name: bedroom
   host: 192.168.1.124
-  token: f8fed2131bfee8dd48f0c0d9bb02f77b
+  token: !secret Xiaomi_light_bedroom

@@ -1,5 +1,5 @@
 binary_sensor.room_motion:
-  friendly_name: 'Room Motion Sensor'
+  friendly_name: 'Room motion'
   emulated_hue_hidden: True
   hidden: False
   homebridge_hidden: true

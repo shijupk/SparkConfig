@@ -10,7 +10,7 @@ switch.kitchen_outlet:
 
 
 switch.living_room_outlet:
-  friendly_name: 'Livingroom Outlet'
+  friendly_name: 'Hall outlet'
   emulated_hue_hidden: False
   hidden: False
   icon: mdi:power-plug

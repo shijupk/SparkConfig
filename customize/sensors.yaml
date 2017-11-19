@@ -1,0 +1,20 @@
+
+sensor.alexa_echo:
+  friendly_name: 'Alexa Echo'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True
+  icon: mdi:amazon
+
+sensor.ha_installed_version:
+  friendly_name: 'Ha Installed Version'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True
+
+sensor.ha_uptime:
+  friendly_name: 'Ha Uptime'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True
+

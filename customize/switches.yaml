@@ -1,0 +1,18 @@
+###################################
+##  Switches Section
+###################################
+switch.kitchen_outlet:
+  friendly_name: 'Kitchen outlet'
+  emulated_hue_hidden: False
+  hidden: False
+  icon: mdi:power-plug
+  assumed_state: true
+
+
+switch.living_room_outlet:
+  friendly_name: 'Livingroom Outlet'
+  emulated_hue_hidden: False
+  hidden: False
+  icon: mdi:power-plug
+  assumed_state: true
+

@@ -1,0 +1,17 @@
+light.bedroom:
+  friendly_name: 'Bed room'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True
+
+light.livingroom:
+  friendly_name: 'Living room'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True
+
+  light.dininghall:
+  friendly_name: 'Dining rall'
+  emulated_hue_hidden: True
+  hidden: False
+  homebridge_hidden: True

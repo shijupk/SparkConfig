@@ -1,8 +1,8 @@
 Bedroom lights:
   entities:
-    - light.Bed room
+    - light.BedRoom
 
 Living Room lights:
   entities:
-    - light.Living Room
-    - light.Dining hall
+    - light.LivingRoom
+    - light.DiningHall

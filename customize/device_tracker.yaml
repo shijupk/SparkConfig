@@ -1,0 +1,6 @@
+device_tracker.alexa_echo:
+  friendly_name: 'Alexa Echo'
+  emulated_hue_hidden: True
+  hidden: True
+  homebridge_hidden: True
+  icon: False

@@ -4,14 +4,14 @@ light.bedroom:
   hidden: False
   homebridge_hidden: True
 
-light.livingroom:
+light.LivingRoom:
   friendly_name: 'Living room'
   emulated_hue_hidden: True
   hidden: False
   homebridge_hidden: True
 
-  light.dininghall:
-  friendly_name: 'Dining rall'
+light.DiningHall:
+  friendly_name: 'Dining Hall'
   emulated_hue_hidden: True
   hidden: False
   homebridge_hidden: True

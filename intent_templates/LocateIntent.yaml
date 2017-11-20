@@ -1,7 +1,9 @@
->
-    {%- if is_state('device_tracker.shiju', 'home') and is_state('device_tracker.jyothi', 'home') -%}
-    You are both home, darling
+  >
+    {%- for state in states.sensor -%}
+    {%- if state.name.lower() == User.lower() -%}
+    {{ state.name }} is at {{ state.state }}
+    {%- elif loop.last -%}
+    {%- endif -%}
     {%- else -%}
-    shiju is at {{ states("device_tracker.shiju") }}
-    and jyothi is at {{ states("device_tracker.shiju") }}
-    {% endif %}
+    Sorry, I don't have a clue.
+    {%- endfor -%}

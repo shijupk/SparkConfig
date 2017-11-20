@@ -3,4 +3,9 @@
     speech:
       text: !include intent_templates/WhereAreWeIntent.yaml
 
+  LocateIntent:
+    speech:
+      text: !include intent_templates/LocateIntent.yaml
+
+
   

@@ -10,13 +10,8 @@ frontend:
 
 config:
 
-logger:
-
 http:
   api_password: !secret http_password
-  #ssl_certificate: /etc/ssl/certs/shijupk_bundle.pem
-  #ssl_key: /etc/live/shijupk.com/shijupk.key.pem
-  #base_url: https://shijupk.com:8123
 
 updater:
 discovery:

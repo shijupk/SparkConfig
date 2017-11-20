@@ -1,0 +1,7 @@
+  >
+    {%- if is_state('device_tracker.shiju, 'home') and is_state('device_tracker.jyothi', 'home') -%}
+    You are both home, darling
+    {%- else -%}
+    shiju is at {{ states("device_tracker.shiju") }}
+    and jyothi is at {{ states("device_tracker.shiju") }}
+    {% endif %}

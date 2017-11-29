@@ -1,7 +1,7 @@
-  >
-    {%- if is_state('device_tracker.shiju', 'home') and is_state('device_tracker.jyothi', 'home') -%}
-    You are both home, darling
-    {%- else -%}
-    shiju is at {{ states("device_tracker.shiju") }}
-    and jyothi is at {{ states("device_tracker.shiju") }}
-    {% endif %}
+ >
+    {%- if is_state('device_tracker.a08d16f36010', 'home') and
+               is_state('device_tracker.94652d8cc189', 'home') -%}
+          You are both home, you silly
+        {%- else -%}
+          Jyothi is at {{ states.device_tracker.a08d16f36010.state.replace('_', ' ') }} and Shju is at {{ states.device_tracker.a08d16f36010.state.replace('_', ' ') }}.
+        {% endif %}

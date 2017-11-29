@@ -1,1 +1,58 @@
-[]
+- id: BedRoomLightOnWithMotion
+  alias: Bed room Light On With Motion
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d0001ad4bc4
+    to: 'on'
+  condition:
+    condition: state
+    entity_id: light.bedroom
+    state: 'off'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.bedroom
+      data:
+        brightness: 255
+    - service: notify.telegram
+      data_template:
+        title: "Spark"
+        message: "Lights switched on"
+    - service: notify.pushbullet
+      data_template:
+        title: "Spark"
+        message: "Lights switched on"
+
+      
+- id: ShijuHome
+  alias: Shiju reached Home
+  trigger:
+    platform: state
+    entity_id: device_tracker.a08d16f36010
+    from: 'not_home'
+    to: 'home'
+  action:
+    - service: notify.telegram
+      data_template:
+        title: "Spark"
+        message: 'Shiju is now home'
+    - service: tts.google_say
+      data:
+        message: 'Welcome home Shiju.'
+
+- id: JoHome
+  alias: Jyothi reached Home
+  trigger:
+    platform: state
+    entity_id: device_tracker.94652d8cc189
+    from: 'not_home'
+    to: 'home'
+  action:
+    - service: notify.telegram
+      data_template:
+        title: "Spark"
+        message: 'Jyothi is now home'
+    - service: tts.google_say
+      data:
+        message: 'Welcome home Jyothi.'
+  
+    

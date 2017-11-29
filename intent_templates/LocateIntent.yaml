@@ -1,9 +1,8 @@
   >
-    {%- for state in states.sensor -%}
-    {%- if state.name.lower() == User.lower() -%}
-    {{ state.name }} is at {{ state.state }}
-    {%- elif loop.last -%}
-    {%- endif -%}
-    {%- else -%}
-    Sorry, I don't have a clue.
-    {%- endfor -%}
+   {%- if User.lower() == "shiju" -%}
+     Shiju is at {{ states.device_tracker.a08d16f36010.state.replace('_', ' ') }}.
+   {%- elif User.lower() == "jyothi" -%}
+     Jyothi is at {{ states.device_tracker.a08d16f36010.state.replace('_', ' ') }}.
+   {%- else -%}
+    I am sorry, I do not know where {{ User }} is.
+   {%- endif -%}

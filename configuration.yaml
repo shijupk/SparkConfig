@@ -1,7 +1,7 @@
 homeassistant:
   name: Spark Home
-  latitude: 12.9833
-  longitude: 77.5833
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
   elevation: 928
   unit_system: metric
   time_zone: Asia/Kolkata
@@ -12,6 +12,32 @@ config:
 
 http:
   api_password: !secret http_password
+
+zone:
+  name: Home
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  radius: 200
+  icon: mdi:home
+
+zone 1:
+  name: Philips
+  latitude: !secret latitude_Philips
+  longitude: !secret longitude_Philips
+  radius: 200
+  icon: mdi:worker
+
+zone 2:
+  name: CDM
+  latitude: !secret latitude_CDM
+  longitude: !secret longitude_CDM
+  radius: 200
+  icon: mdi:worker
+
+weather:
+  - platform: yweather
+    name: Weather
+    woeid: !secret woeid
 
 updater:
 discovery:
@@ -24,15 +50,36 @@ logbook:
 map:
 
 sun:
+
+
+telegram_bot:
+  platform: polling
+  api_key: !secret telegram_key
+  allowed_chat_ids:
+    - !secret telegram_chatID_Shiju
+
+notify:
+  - platform: pushbullet
+    api_key: !secret pushbullet_key
+    name: pushbullet
+  - name: telegram
+    platform: telegram
+    api_key: !secret telegram_key
+    chat_id: !secret telegram_chatID_Shiju
+    
 intent_script: !include intent_scripts.yaml
 alexa:
 
-sensor:
-  - platform: yr
+xiaomi_aqara:
+  gateways:
+    - mac:
+      key: !secret xiaomikey
 
 tts:
   - platform: google
-
+logger:
+  default: error
+  
 group: !include_dir_merge_named group
 device_tracker: !include_dir_merge_list device_tracker
 light: !include_dir_merge_list light

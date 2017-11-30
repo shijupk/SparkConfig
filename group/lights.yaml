@@ -1,6 +1,7 @@
 Bedroom lights:
   entities:
     - light.BedRoom
+    - light.gateway_light_34ce008d5d47    
 
 Living Room lights:
   entities:

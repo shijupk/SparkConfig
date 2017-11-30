@@ -34,10 +34,10 @@ zone 2:
   radius: 200
   icon: mdi:worker
 
-weather:
-  - platform: yweather
-    name: Weather
-    woeid: !secret woeid
+#weather:
+# - platform: yweather
+#    name: Weather
+#    woeid: !secret woeid
 
 updater:
 discovery:

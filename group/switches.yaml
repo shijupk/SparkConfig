@@ -2,3 +2,4 @@ Interior Switches:
   entities:
     - switch.kitchen_outlet
     - switch.living_room_outlet
+    - switch.plug_158d0001e0f18f

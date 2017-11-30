@@ -1,8 +1,4 @@
 binary_sensor.room_motion:
-  friendly_name: 'Room motion'
-  emulated_hue_hidden: True
-  hidden: False
-  homebridge_hidden: true
-  icon: mdi:sensor
+  friendly_name: 'Bed room occupency'
 
 

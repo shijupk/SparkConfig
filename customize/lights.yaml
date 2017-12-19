@@ -1,4 +1,4 @@
-light.bedroom:
+light.BedRoom:
   friendly_name: 'Bed room'
   emulated_hue_hidden: True
   hidden: False

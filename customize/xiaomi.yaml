@@ -6,7 +6,7 @@ sensor.illumination_34ce008d5d47:
   friendly_name: Living room brightness
   icon: mdi:brightness-7
 binary_sensor.motion_sensor_158d0001ad4bc4:
-  friendly_name: Living room occupancy
+  friendly_name: Living room occupency
 binary_sensor.door_window_sensor_158d0001a9b369:
   friendly_name: Cupboard open
   icon: mdi:lock-open

@@ -1,3 +1,9 @@
 media_players:
   entities:
     - media_player.livingroom_chrome_cast
+
+Entertainment:
+  control: hidden
+  entities:
+    - sensor.living_room
+    - input_select.livingroomharmony

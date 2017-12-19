@@ -1,4 +1,4 @@
-- platform: xiaomi_miio
-  name: bedroom
+- platform: mi_bulb
+  name: BedRoom
   host: 192.168.1.124
-  token: !secret Xiaomi_light_bedroom
+  token: 8344a552685366ee1194d7a2da87c284

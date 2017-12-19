@@ -18,3 +18,9 @@ sensor.ha_uptime:
   hidden: False
   homebridge_hidden: True
 
+remote.livingroom:
+  friendly_name: 'Livingroom Remote'
+  icon: mdi:remote
+sensor.living_room:
+  friendly_name: 'Harmony Activity'
+  icon: mdi:remote

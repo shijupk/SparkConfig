@@ -57,16 +57,40 @@ telegram_bot:
   api_key: !secret telegram_key
   allowed_chat_ids:
     - !secret telegram_chatID_Shiju
+    - !secret telegram_chatID_Jyothi
 
 notify:
   - platform: pushbullet
     api_key: !secret pushbullet_key
     name: pushbullet
+  - name: jyothi_telegram
+    platform: telegram
+    api_key: !secret telegram_key
+    chat_id: !secret telegram_chatID_Jyothi
   - name: telegram
     platform: telegram
     api_key: !secret telegram_key
     chat_id: !secret telegram_chatID_Shiju
-    
+  - name: google_chome
+    platform: html5
+    gcm_api_key: !secret firebase_key
+    gcm_sender_id: !secret firebase_sender
+
+ mqtt:
+  broker: localhost
+  port: 1883
+  client_id: sparkhome
+  username: mqtt
+  password: backtrack
+
+- platform: mqtt
+  name: "MQTT Living Room Light"
+  state_topic: "smartthings/LivingRoom/switch"
+  command_topic: "smartthings/LivingRoom/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
 intent_script: !include intent_scripts.yaml
 alexa:
 
@@ -74,6 +98,12 @@ xiaomi_aqara:
   gateways:
     - mac:
       key: !secret xiaomikey
+
+remote:
+  - platform: harmony
+    name: livingroom
+    host: 192.168.1.130
+    delay_secs: 1 
 
 tts:
   - platform: google
@@ -87,3 +117,6 @@ switch: !include_dir_merge_list switch
 binary_sensor: !include_dir_merge_list binary_sensor
 automation: !include automations.yaml
 script: !include scripts.yaml
+input_select: !include input_select.yaml
+sensor: !include sensor.yaml
+

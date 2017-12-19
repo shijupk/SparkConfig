@@ -1,0 +1,9 @@
+  livingroomharmony:
+    name: Harmony Activity
+    options:
+      - PowerOff
+      - Watch TV
+      - Chromecast
+      - Firestick
+    initial: PowerOff
+    icon: mdi:remote

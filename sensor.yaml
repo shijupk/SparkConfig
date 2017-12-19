@@ -1,0 +1,9 @@
+  - platform: template
+    sensors:
+      living_room:
+        value_template: >-
+          {%- if states.states.remote.livingroom != None -%}
+            {{ states.remote.livingroom.attributes.current_activity }}
+          {%- else -%}
+            NA
+          {%- endif -%}
